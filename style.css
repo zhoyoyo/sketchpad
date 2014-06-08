@@ -178,10 +178,60 @@ ul li {
 	margin-right: 40px;
 }
 
+
+.add-link-expand {
+	color:#00A4C5;
+	font-size: 20px;
+	float: right;
+	padding:10px;
+	margin-top: 20px;
+	border-radius:5px;
+	border:1px #00A4C5 solid;
+	width:300px;
+	text-align: center;
+	margin-right: 40px;
+	height: 530px;
+}
+
+
 article.link {
 	background-color:none;
 	border:none;
 	width:386px;
 }
+
+#fixed-upload {
+	position: absolute;
+	left:0;
+	top:200;
+}
+
+
+.notes{
+	height:350px;
+	width:290px;
+	text-align: left;
+
+}
+
+.notesbox,.urlbox {
+	margin-top: 10px;
+	text-align: left;
+}
+
+.url {
+	width: 290px;
+}
+
+.add-button {
+	background-color: #00A4C5;
+	padding: 5px 10px;
+	border-radius: 5px;
+	color:white;
+	width: 270px;
+	margin-top: 15px;
+}
+
+
 
 
