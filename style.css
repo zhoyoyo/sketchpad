@@ -167,7 +167,7 @@ ul li {
 
 
 
-.add-link, .add-block {
+.add-link, .add-block, .add-tweet {
 	color:#00A4C5;
 	font-size: 20px;
 	float: right;
@@ -194,6 +194,25 @@ ul li {
 	margin-right: 40px;
 	height: 530px;
 }
+
+
+
+.add-tweet-expand {
+	color:#D26091;
+	font-size: 20px;
+	float: right;
+	padding:10px;
+	margin-top: 20px;
+	border-radius:5px;
+	border:1px #D26091 solid;
+	width:300px;
+	text-align: center;
+	margin-right: 40px;
+	height: 580px;
+	display: none;
+
+}
+
 
 
 article.link {
@@ -242,6 +261,17 @@ article.link h3 {
 	width: 270px;
 	margin-top: 15px;
 }
+
+
+.add-tweet-button {
+	background-color: #D26091;
+	padding: 5px 10px;
+	border-radius: 5px;
+	color:white;
+	width: 270px;
+	margin-top: 15px;
+}
+
 
 #storyline {
 	float:left;
