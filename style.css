@@ -1,0 +1,187 @@
+body,html {
+	height: 100%;
+	width:100%;
+	font-family: 'Museo Sans', sans-serif;
+	font-weight: 100;
+	margin:0;
+	padding: 0;
+}
+
+#content {
+	text-align: center;
+	margin-top: 20%;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 28px;
+	margin:0;
+	padding:0;
+	padding-bottom: 20px;
+}
+
+h2 {
+	font-weight: 100;
+	font-size: 22px;
+	margin: 0;
+	margin-top: 10px;
+	padding: 0;
+}
+
+#login {
+	margin-top: 50px;
+	font-size: 28px;
+	color:#00A4C5;
+}
+
+#login img {
+	padding-top: 5px;
+}
+
+a {
+	text-decoration: none;
+	color:#00A4C5;
+}
+
+#main {
+
+	margin:0 auto;
+	text-align: center;
+	margin-left: 25%;
+}
+
+article {
+	text-align: left;
+	width:600;
+	border:1px #58595b solid;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+
+
+article h3 {
+	margin:0px;
+	background:#58595b;
+	font-size:20px;
+	color:white;
+	font-weight: 300;
+	padding:5px;
+	padding-left:10px;
+}
+
+article p {
+	padding:5px;
+	margin:0;
+	padding-left:10px;
+}
+
+article h3 a {
+	color:white;	
+}
+
+
+#header {
+	height: 56px;
+	width:100%;
+	background-color: #eee;
+	color:#939598;
+	margin-bottom: 60px;
+}
+
+#logout {
+	font-size: 20px;
+	text-align: right;
+	margin-right: 20px;
+	float: right;
+	margin-top: 18px;
+}
+
+#name {
+	font-size: 28px;
+	margin-left: 20px;
+	float: left;
+	margin-top: 10px;
+
+}
+
+#add {
+	float: left;
+	margin-left: 8%;
+	font-weight: 100;
+	color:white;
+	background-color: #999;
+	padding:10px;
+	border-radius: 5px;
+}
+
+#add a {
+	color:white;
+}
+
+#storyhead {
+	color:white;
+	height: 44px;
+	width:100%;
+	background-color: #58595b;
+	margin-top: -60px;
+}
+
+#storyname {
+	padding:10px;
+	font-weight: 300;
+	font-size:20px;
+
+}
+
+#switch {
+	float: left;
+	margin-left: 8%;
+	font-weight: 100;
+	padding:8px 20px;
+	border-radius: 5px;
+	border:1px #58595b solid;
+	margin-top: 30px;
+}
+#switch a {
+	color:#58595b;
+
+}
+
+ul {
+	text-decoration: none;
+	list-style: none;
+	margin:0;
+	padding:0;
+	text-align: left;
+	margin-top: 30px;
+}
+
+ul li {
+	display: inline;
+	margin:0;
+	padding:0;
+	padding-right: 20px;
+}
+
+
+
+.add-link {
+	color:#00A4C5;
+	font-size: 20px;
+	float: right;
+	padding:10px;
+	margin-top: 20px;
+	border-radius:5px;
+	border:1px #00A4C5 solid;
+	width:300px;
+	text-align: center;
+	margin-right: 40px;
+}
+
+article.link {
+	background-color:none;
+	border:none;
+	width:386px;
+}
+
+
