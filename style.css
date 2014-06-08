@@ -13,11 +13,12 @@ body,html {
 }
 
 h1 {
-	font-weight: 300;
-	font-size: 28px;
+	font-weight: 500;
+	font-size: 59px;
 	margin:0;
 	padding:0;
 	padding-bottom: 20px;
+	color:#565656;
 }
 
 h2 {
@@ -135,7 +136,7 @@ article h3 a {
 
 #switch {
 	float: left;
-	margin-left: 8%;
+	margin-left: 5%;
 	font-weight: 100;
 	padding:8px 20px;
 	border-radius: 5px;
@@ -198,6 +199,15 @@ article.link {
 	background-color:none;
 	border:none;
 	width:386px;
+}
+
+article.link h3 {
+	background:none;
+	border-bottom: 1px #ccc solid;
+}
+
+.link h3 a {
+	color:#00A4C5;
 }
 
 #fixed-upload {
