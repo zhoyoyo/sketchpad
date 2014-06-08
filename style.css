@@ -315,3 +315,28 @@ article.link h3 {
 	color:#ccc;
 }
 
+
+.embedded-container {
+	display: inline;
+	width: 100%;
+}
+
+.embedly-image {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	background-repeat: no-repeat;
+}
+
+.embedly-summary {
+	font-size: .75em;
+	white-space: prewrap;
+	display: inline-block;
+	width: 250px;
+	padding:5px;
+	margin:0;
+	padding-left:10px;
+	height: 90px;
+	vertical-align: top;
+}
+

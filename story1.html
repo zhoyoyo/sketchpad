@@ -2,8 +2,6 @@
 <head>
 	<title>SketchPad Demo</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src='jquery.min.js'></script>
-	<script type="text/javascript" src='script.js'></script>
 </head>
 <body>
 	<div id='header'>
@@ -114,34 +112,59 @@
 				</li>
 			</ul>
 		</div> <!--menu-->
-		<div class='add-link'>
-			<a href='story1_tweets.html'>Add a link</a>
+		<div class='add-link-expand'>
+			Add a link
+			<div>
+				<div class='urlbox'>
+					URL: <input id="urllink" type="text" name="url" class='url'><br>
+				</div>
+				<div class='urlbox'>
+					Notes: <textarea id="urlnotes" name="notes" class='notes'></textarea>
+				</div>
+				<input type="submit" class='add-button' value="Add" id="submit-url">
+			</div>
 		</div>
 
 	
 		<article class='link'>
-			<h3><a href='story1.html'>Link 1: MIT Media Lab - Wikipedia</a></h3>
+			<h3><a class="story-link" href='http://en.wikipedia.org/wiki/MIT_Media_Lab'>Link 1: MIT Media Lab - Wikipedia</a></h3>
+			<div class="embedded-container">
+				<div class="embedly-image"></div>
+				<div class="embedly-summary"></div>
+			</div>
 			<p>
 				Here goes whatever you need to say about this link... Type some notes and have them all displayed under the link... <a>Edit</a>
 			</p>
 		</article>
 
 		<article class='link'>
-			<h3><a href='story1.html'>Link 2: MIT Press Coverage</a></h3>
+			<h3><a class="story-link" href='http://embed.ly/'>Embedly</a></h3>
+			<div class="embedded-container">
+				<div class="embedly-image"></div>
+				<div class="embedly-summary"></div>
+			</div>
 			<p>
 				Here goes whatever you need to say about this link... Type some notes and have them all displayed under the link... <a>Edit</a>
 			</p>
 		</article>
 
 		<article class='link'>
-			<h3><a href='story1.html'>Link 3: Guardian API</a></h3>
+			<h3><a class="story-link" href='http://www.theguardian.com/open-platform'>Link 3: Guardian API</a></h3>
+			<div class="embedded-container">
+				<div class="embedly-image"></div>
+				<div class="embedly-summary"></div>
+			</div>
 			<p>
 				Here goes whatever you need to say about this link... Type some notes and have them all displayed under the link... <a>Edit</a>
 			</p>
 		</article>
 
 		<article class='link'>
-			<h3><a href='story1.html'>Link 4: Hackthon Culture in Cambridge</a></h3>
+			<div class="embedded-container">
+				<div class="embedly-image"></div>
+				<div class="embedly-summary"></div>
+			</div>
+			<h3><a class="story-link" href='http://hackingjournalism.com/'>Link 4: Hackthon Culture in Cambridge</a></h3>
 			<p>
 				Here goes whatever you need to say about this link... Type some notes and have them all displayed under the link... <a>Edit</a>
 			</p>
@@ -154,6 +177,11 @@
 	<div id='fixed-upload'>
 		<img src='upload.png' width="70" height="235">
 	</div>
-
+	<script type="text/javascript" src='jquery.js'></script>
+	<script type="text/javascript" src='core.js'></script>
+	<script type="text/javascript" src='mouse.js'></script>
+	<script type="text/javascript" src='widget.js'></script>
+	<script type="text/javascript" src='draggable.js'></script>
+	<script type="text/javascript" src='script.js'></script>
 </body>
 </html>
