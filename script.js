@@ -5,7 +5,7 @@
 
 	$(document).ready(function() {
 		var key = '98e2546778e44705aafadd065bcf1153';
-
+		var collections = false;
 		var template_story = '<article class="link"><h3><a class="story-link" href="lnk">title</a></h3>'
 		+ '<div class="embedded-container"><div class="embedly-image"></div>'
 		+ '<div class="embedly-summary"></div></div><p>notes... <a>Edit</a></p></article>'
@@ -34,10 +34,10 @@
 			console.log(notes);
 			var	new_url = template_story.replace('lnk', link).replace('notes', notes);
 			console.log(new_url);
-			$('#main').append(new_url);
+			$('.add-link-expand').after(new_url);
 
 			$.get('https://api.embed.ly/1/oembed?key='+key+'&url=' + link, function(data,err) {
-				var $this = $('#main > .link:last-child');
+				var $this = $('#main > .link').first();
 				console.log($this);
 				$this.find('h3 a').text(data.title);
 				$this.find('.embedly-image').css({
@@ -54,7 +54,14 @@
 			$('.add-tweet-expand').hide();
 			$('#main').css({'width':'30%','margin-left':'60%'})
 			$('#storyline').css('display','block');
-
+			collections = !collections;
+			console.log($('.link'));
+			$('.link').first().draggable({
+				revert: true,
+				stop: function() {
+					$('#add-content').append($(this).clone());
+				}
+			});
 		})
 
 		$('.add-link').on('click', function(event) {
