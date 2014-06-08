@@ -52,6 +52,7 @@
 			$(this).html("<a href=''>Switch to Collections</a>");
 			$('.add-link-expand').hide();
 			$('.add-tweet-expand').hide();
+			$('.add-picture-expand').hide();
 			$('#main').css({'width':'30%','margin-left':'60%'})
 			$('#storyline').css('display','block');
 			collections = !collections;
@@ -71,20 +72,68 @@
 
 
 		$('li.tweet-switch').click(function() {
+
 			$('article').css('display','none');
 			$('.add-link').css({'display':'none'});
 			$('.add-link-expand').css({'display':'none'});
+			$('.add-picture-expand').css({'display':'none'});
 
 			$('.add-tweet-expand').css('display','block');
 
 			$('#tweet').attr('fill','#D26091');
 			$('#link').attr('fill','none');
+			$('#picture').attr('fill','none');
+			$('.images').css({'display':'none'});
+
+			if ($('#storyline').css('display')!='none')
+			{
+				$('.add-tweet-expand').css('display','none');
+			}
+
 		})
 
 		$('li.link-switch').click(function() {
+			$('.add-tweet-expand').css('display','none');
+			$('.add-picture-expand').css('display','none');
+			$('article').css('display','block');
+			$('.add-link-expand').css({'display':'block'});
 			$('#link').attr('fill','#00A4C5');
 			$('#tweet').attr('fill','none');
+			$('#picture').attr('fill','none');
+			$('.images').css({'display':'none'});
+
+			if ($('#storyline').css('display')!='none')
+			{
+				$('.add-link-expand').css('display','none');
+			}
+
+
 		})
+
+
+		$('li.picture-switch').click(function() {
+			$('.add-tweet-expand').css('display','none');
+			$('.add-link-expand').css({'display':'none'});
+			$('.add-picture-expand').css({'display':'block'});
+			$('article').css('display','none');
+			$('.add-link').css({'display':'none'});
+			$('#picture').attr('fill','#DDC85C');
+			$('#link').attr('fill','none');
+			$('#tweet').attr('fill','none');
+			$('.images').css({'display':'block'});
+
+			if ($('#storyline').css('display')!='none')
+			{
+				$('.add-picture-expand').css('display','none');
+			}
+
+
+		})
+
+
+
+
+
 	});
 	
 
