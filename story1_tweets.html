@@ -78,15 +78,15 @@
 	<div id='main'>
 		<div id='menu'>
 			<ul>
-				<li>
+				<li class='link-switch'>
 					<svg width="20" height="25">
-	 				 <circle cx="10" cy="15" r="8" stroke="#00A4C5" stroke-width="2" fill="#00A4C5" />
+	 				 <circle id='link' cx="10" cy="15" r="8" stroke="#00A4C5" stroke-width="2" fill="#00A4C5" />
 					</svg>
 					<span style='margin-top:-10px;'>Links</span>
 				</li>
-				<li>
+				<li class='tweet-switch'>
 					<svg width="20" height="25">
-	 				 <circle cx="10" cy="15" r="8" stroke="#D26091" stroke-width="2" fill="none" />
+	 				 <circle id='tweet' cx="10" cy="15" r="8" stroke="#D26091" stroke-width="2" fill="none" />
 					</svg>
 					Tweets
 				</li>
@@ -110,6 +110,25 @@
 				</li>
 			</ul>
 		</div> <!--menu-->
+
+
+		<div class='add-tweet-expand'>
+			Search Tweets
+			<div class='urlbox'>
+				User: <input type="text" name="url" class='url'><br>
+			</div>
+			<div class='urlbox'>
+				Hashtag: <input type="text" name="url" class='url'><br>
+			</div>
+			<div class='urlbox'>
+				Results: <input type="text" name="notes" class='notes'>
+			</div>
+			<div class='add-tweet-button'>
+			Add
+			</div>
+		</div> <!--add link box end-->
+
+
 		<div class='add-link-expand'>
 			Add a link
 			<div class='urlbox'>
@@ -122,6 +141,8 @@
 			Add
 			</div>
 		</div> <!--add link box end-->
+
+
 
 	
 		<article class='link'>
