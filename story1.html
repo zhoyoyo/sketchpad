@@ -80,13 +80,13 @@
 	<div id='main'>
 		<div id='menu'>
 			<ul>
-				<li>
+				<li class='link-switch'>
 					<svg width="20" height="25">
 	 				 <circle id='link' cx="10" cy="15" r="8" stroke="#00A4C5" stroke-width="2" fill="#00A4C5" />
 					</svg>
 					<span style='margin-top:-10px;'>Links</span>
 				</li>
-				<li>
+				<li class='tweet-switch'>
 					<svg width="20" height="25">
 	 				 <circle id='tweet' cx="10" cy="15" r="8" stroke="#D26091" stroke-width="2" fill="none" />
 					</svg>
@@ -98,9 +98,9 @@
 					</svg>
 					Data Sources
 				</li>
-				<li>
+				<li class='picture-switch'>
 					<svg width="20" height="25">
-	 				 <circle cx="10" cy="15" r="8" stroke="#DDC85C" stroke-width="2" fill="none" />
+	 				 <circle id='picture' cx="10" cy="15" r="8" stroke="#DDC85C" stroke-width="2" fill="none" />
 					</svg>
 					Pictures
 				</li>
@@ -112,6 +112,7 @@
 				</li>
 			</ul>
 		</div> <!--menu-->
+
 		<div class='add-link-expand'>
 			Add a link
 			<div>
@@ -124,6 +125,40 @@
 				<input type="submit" class='add-button' value="Add" id="submit-url">
 			</div>
 		</div>
+
+
+		<div class='add-tweet-expand'>
+			Search Tweets
+			<div class='urlbox'>
+				User: <input type="text" name="url" class='url'><br>
+			</div>
+			<div class='urlbox'>
+				Hashtag: <input type="text" name="url" class='url'><br>
+			</div>
+			<div class='urlbox'>
+				Results: <input type="text" name="notes" class='notes'>
+			</div>
+			<div class='add-tweet-button'>
+			Add
+			</div>
+		</div> <!--add link box end-->
+
+
+		<div class='add-picture-expand'>
+			Add a picture
+			<div>
+				<div class='urlbox'>
+					Image URL: <input id="urllink" type="text" name="url" class='url'><br>
+				</div>
+				<div class='urlbox'>
+					Notes: <textarea id="urlnotes" name="notes" class='notes'></textarea>
+				</div>
+			<div class='add-picture-button'>
+			Add
+			</div>
+			</div>
+		</div>
+
 
 	
 		<article class='link'>
@@ -170,7 +205,20 @@
 			</p>
 		</article>
 
-
+		<div class='images'>
+			<div class='image-link'>
+				<img src="img/photo3.jpg">
+				<p>This is the first photo.</p>
+			</div>
+			<div class='image-link'>
+				<img src="img/photo2.jpg">
+				<p>This is the second photo.</p>
+			</div>
+			<div class='image-link'>
+				<img src="img/photo1.jpg">
+				<p>This is the third photo.</p>
+			</div>
+		</div>
 
 	</div> <!--end of main-->
 
