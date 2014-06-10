@@ -59,14 +59,14 @@
 			$('#storyline').css('display','block');
 			collections = !collections;
 			console.log($('.link'));
-			$('.link').each(function(index,element) {
+			$('.content').each(function(index,element) {
 				$(element).draggable({
 					revert: true
 				});
 			});
 
 			$('.add-block').droppable({
-				accept: '.link',
+				accept: '.content',
 				drop: function(event,ui) {
 					console.log(ui.draggable);
 					var clone = ui.draggable.clone().css ({
@@ -81,6 +81,7 @@
 				$('#add-content').html("");
 				var new_title = $('.add-block input').val();
 				$('.add-block input').val('');
+				$('.add-block textarea').val('');
 				new_title = tab_template.replace('ttl', new_title);
 				$('#storyline-tabs').prepend(new_title);
 			});

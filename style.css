@@ -97,6 +97,10 @@ article h3 a {
 	margin-top: 18px;
 }
 
+#logout a {
+	color:white;
+}
+
 #name {
 	font-size: 28px;
 	margin-left: 20px;
@@ -157,6 +161,8 @@ ul {
 	padding:0;
 	text-align: left;
 	margin-top: 30px;
+	position:relative;
+	z-index: 2;
 }
 
 ul li {
@@ -399,8 +405,8 @@ article.link h3 {
 	margin-top: 40px;
 }
 
-.images img {
-	width:400px;
+.image-link img {
+	width:350px;
 }
 
 
