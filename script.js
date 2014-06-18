@@ -96,17 +96,13 @@
 		$('li.tweet-switch').click(function() {
 
 			$('article').css('display','none');
-			$('.add-link').css({'display':'none'});
-			$('.add-link-expand').css({'display':'none'});
-			$('.add-picture-expand').css({'display':'none'});
-
+			$('.add').css({'display':'none'});
 			$('.add-tweet-expand').css('display','block');
 
+			$('.dots').attr('fill','none');
 			$('#tweet').attr('fill','#D26091');
-			$('#link').attr('fill','none');
-			$('#picture').attr('fill','none');
-			$('.images').css({'display':'none'});
 
+			$('.image-content').css({'display':'none'});
 			if ($('#storyline').css('display')!='none')
 			{
 				$('.add-tweet-expand').css('display','none');
@@ -115,14 +111,12 @@
 		})
 
 		$('li.link-switch').click(function() {
-			$('.add-tweet-expand').css('display','none');
-			$('.add-picture-expand').css('display','none');
-			$('article').css('display','block');
+			$('.add').css('display','none');
 			$('.add-link-expand').css({'display':'block'});
+			$('article').css('display','block');
+			$('.dots').attr('fill','none');
 			$('#link').attr('fill','#00A4C5');
-			$('#tweet').attr('fill','none');
-			$('#picture').attr('fill','none');
-			$('.images').css({'display':'none'});
+			$('.image-content').css({'display':'none'});
 
 			if ($('#storyline').css('display')!='none')
 			{
@@ -134,15 +128,12 @@
 
 
 		$('li.picture-switch').click(function() {
-			$('.add-tweet-expand').css('display','none');
-			$('.add-link-expand').css({'display':'none'});
+			$('.add').css('display','none');
 			$('.add-picture-expand').css({'display':'block'});
 			$('article').css('display','none');
-			$('.add-link').css({'display':'none'});
+			$('.dots').attr('fill','none');
 			$('#picture').attr('fill','#DDC85C');
-			$('#link').attr('fill','none');
-			$('#tweet').attr('fill','none');
-			$('.images').css({'display':'block'});
+			$('.image-content').css({'display':'block'});
 
 			if ($('#storyline').css('display')!='none')
 			{
@@ -153,7 +144,20 @@
 		})
 
 
+		$('li.video-switch').click(function() {
+			$('.dots').attr('fill','none');
+			$('#video').attr('fill','#6D6E71');
 
+
+		})
+
+		$('li.data-switch').click(function() {
+			$('.dots').attr('fill','none');
+			$('#data').attr('fill','#5b5492');
+
+
+
+		})
 
 
 	});
