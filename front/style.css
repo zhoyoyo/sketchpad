@@ -113,7 +113,7 @@ html {
 }
 
 .row.repeatable {
-    margin: 80px 0 80px 0;
+    margin: 100px 0 80px 0;
 }
 
 .three-together {
@@ -1065,6 +1065,10 @@ br.clear {
     width: 280px
 }
 
+.container .five.columns.img {
+    width: 450px;
+}
+
 .container .six.columns {
     width: 340px
 }
@@ -1135,7 +1139,7 @@ br.clear {
 }
 
 .container .offset-one {
-    padding-left: 60px
+    padding-left: 20px
 }
 
 .container .offset-two {
@@ -1196,7 +1200,7 @@ br.clear {
 
 .container .right.offset-one {
     padding-left: 0;
-    padding-right: 60px
+    padding-right: 20px
 }
 
 .container .right.offset-two {
